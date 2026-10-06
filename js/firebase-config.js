@@ -8,13 +8,16 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+
+  apiKey: "AIzaSyBoPYmbH4SgCQHsQD6YRbxF4CMGfZRmjXs",
+  authDomain: "saffron-bf5ba.firebaseapp.com",
+  projectId: "saffron-bf5ba",
+  storageBucket: "saffron-bf5ba.firebasestorage.app",
+  messagingSenderId: "55479998306",
+  appId: "1:55479998306:web:3f3500a4424e09287b3e3b",
+  measurementId: "G-1C1XMG4LCP"
 };
+
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
