@@ -1,34 +1,20 @@
-// =====================================================================
-//  FIREBASE CONFIGURATION  -  THIS IS THE ONLY FILE YOU MUST EDIT
-// =====================================================================
-//  Where to get these values:
-//  Firebase Console > Project settings (gear icon) > General >
-//  "Your apps" > Web app (</>) > "SDK setup and configuration" > Config
-//
-//  Replace every "PASTE_..." text below with your own values.
-//  (These web config values are NOT secret. Your data is protected by
-//   Firestore Security Rules. NEVER put a service-account / Admin SDK
-//   private key in this project.)
-// =====================================================================
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY",
-  authDomain: "PASTE_YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "PASTE_YOUR_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
+  apiKey: "AIzaSyBoPYmbH4SgCQHsQD6YRbxF4CMGfZRmjXs",
+  authDomain: "saffron-bf5ba.firebaseapp.com",
+  projectId: "saffron-bf5ba",
+  storageBucket: "saffron-bf5ba.firebasestorage.app",
+  messagingSenderId: "55479998306",
+  appId: "1:55479998306:web:3f3500a4424e09287b3e3b",
+  measurementId: "G-1C1XMG4LCP"
 };
 
-// true once you have pasted a real key (used to show a helpful warning banner)
 export const isConfigured = !firebaseConfig.apiKey.startsWith("PASTE");
 
-// Start Firebase, then export the two services every other file uses:
-//   auth = Firebase Authentication (login / register / logout)
-//   db   = Firestore database (users, menu, orders)
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
